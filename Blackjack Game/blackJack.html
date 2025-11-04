@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./Favicon/magic-trick_295200.png"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <article class="dealerCards">
+          <div id="containerDealer"></div>
+          <p id="dealerCount"></p>
+        </article>
+
+        <article class="playerCards">
+          <article id="betContainer">
+            <p id="playerBet"></p>
+            <div class="chipsBetDisplay">
+              <img
+                id="displayBetChipTwenty"
+                class="resetBet"
+                src="./Chips/20.png"
+                alt=""
+              /><img
+                class="resetBet"
+                id="displayBetChipFifty"
+                src="./Chips/50.png"
+                alt=""
+              /><img
+                id="displayBetChipHundert"
+                class="resetBet"
+                src="Chips/100.png"
+                alt=""
+              />
+            </div>
+          </article>
+
+          <article id="containerPlayer" class="containerPlayer"></article>
+
+          <p id="playerCount" class="playerCount"></p>
+        </article>
+
+        <article class="playerCalls">
+          <button class="dealBtn" id="dealBtn">
+            <p class="playingBtns">DEAL</p>
+          </button>
+          <button id="hitBtn"><p class="playingBtns">HIT</p></button>
+          <button id="standBtn"><p class="playingBtns">STAND</p></button>
+        </article>
+
+        <article class="chipsAndMoney">
+          <ul class="chips">
+            <li class="chip">
+              <img id="chipTwenty" src="./Chips/20.png" alt="" />
+            </li>
+            <li class="chip">
+              <img id="chipFifty" src="./Chips/50.png" alt="" />
+            </li>
+            <li class="chip">
+              <img id="chipOneHundred" src="Chips/100.png" alt="" />
+            </li>
+            <li class="allIn">
+              <button id="allIn"><p class="playingBtns">ALL IN</p></button>
+            </li>
+            <li id="playerMoney" class="playerMoney">Bank: $1000</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+  <script src="cards.js"></script>
+</html>
